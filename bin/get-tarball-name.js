@@ -8,7 +8,8 @@ function getTarballName() {
   var platform = process.platform;
   var arch = execSync(packageRoot + '/bin/variables.sh arch').toString();
   var abi = process.versions.modules;
-  var tarballName = 'libbitcoind-' + version + '-classic-node' + abi + '-' + platform + '-' + arch + '.tgz';
+  var tarballName = 'libbitcoind-' + version + '-node' + abi + '-' + platform + '-' + 'x64' + '.tgz';
+  //var tarballName = 'libbitcoind-' + version + '-node' + abi + '-' + platform + '-' + arch + '.tgz';
   return tarballName;
 }
 
